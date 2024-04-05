@@ -78,5 +78,5 @@ button.addEventListener( "click", () =>{
     let linear = body.style.backgroundImage = `linear-gradient(${RandomFoiz()}deg, ${style} 0%, ${RandomBack()} ${RandomFoiz()}%, ${RandomBack()} 100%)`;
     button.style.backgroundColor = RandomBack();
     // har bosganda buttonni backgroundi ham o'zgaradigan qildim
-    h4.textContent = `linear-gradient(${RandomFoiz()}deg, ${style} 0%, ${RandomBack()} ${RandomFoiz()}%, ${RandomBack()} 100%)`
+    h4.textContent = linear
 });
