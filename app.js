@@ -36,6 +36,7 @@
 // });
 
 // btn2.addEventListener('click', () =>{
+//     btn1.disabled = false;
 //     if(+h2.textContent == 1){
 //         btn1.setAttribute("disabled", true);
 //     }
@@ -51,6 +52,7 @@
 
 let body = document.querySelector("body");
 let button = document.querySelector("#button");
+let h4 = document.querySelector(".rang")
 body.style.backgroundColor = "#FFF"
 
 // background-color: rgb(65, 88, 208);
@@ -76,5 +78,5 @@ button.addEventListener( "click", () =>{
     let linear = body.style.backgroundImage = `linear-gradient(${RandomFoiz()}deg, ${style} 0%, ${RandomBack()} ${RandomFoiz()}%, ${RandomBack()} 100%)`;
     button.style.backgroundColor = RandomBack();
     // har bosganda buttonni backgroundi ham o'zgaradigan qildim
-
-})
+    h4.textContent = `linear-gradient(${RandomFoiz()}deg, ${style} 0%, ${RandomBack()} ${RandomFoiz()}%, ${RandomBack()} 100%)`
+});
